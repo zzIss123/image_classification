@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div align="center">
+    <h2>demo</h2>
+    <br>
+    <form action="{{ url_for('predict')}}" method="post">
+        <b>图片路径</b><input type="text" name="housesize" required />
+        <br>
+        <button type="submit">预测结果</button>
+    </form>
+    <br>
+    {{ prediction_display_area }}
+</div>
+ 
+</body>
+</html>
